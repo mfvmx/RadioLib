@@ -140,6 +140,10 @@
 
 // undocumented registers
 #define RADIOLIB_SX126X_REG_SENSITIVITY_CONFIG                 0x0889 // SX1268 datasheet v1.1, section 15.1
+#define RADIOLIB_SX126X_REG_TX_CLAMP_CONFIG                    0x08D8 // SX1268 datasheet v1.1, section 15.2
+#define RADIOLIB_SX126X_REG_RTC_STOP                           0x0920 // SX1268 datasheet v1.1, section 15.3
+#define RADIOLIB_SX126X_REG_RTC_EVENT                          0x0944 // SX1268 datasheet v1.1, section 15.3
+#define RADIOLIB_SX126X_REG_IQ_CONFIG                          0x0736 // SX1268 datasheet v1.1, section 15.4
 #define RADIOLIB_SX126X_REG_RX_GAIN_RETENTION_0                0x029F // SX1268 datasheet v1.1, section 9.6
 #define RADIOLIB_SX126X_REG_RX_GAIN_RETENTION_1                0x02A0 // SX1268 datasheet v1.1, section 9.6
 #define RADIOLIB_SX126X_REG_RX_GAIN_RETENTION_2                0x02A1 // SX1268 datasheet v1.1, section 9.6
@@ -151,6 +155,10 @@
 #define RADIOLIB_SX126X_SLEEP_START_WARM                       0b00000100  //  2     2                 warm start, configuration is retained
 #define RADIOLIB_SX126X_SLEEP_RTC_OFF                          0b00000000  //  0     0     wake on RTC timeout: disabled
 #define RADIOLIB_SX126X_SLEEP_RTC_ON                           0b00000001  //  0     0                          enabled
+
+//RADIOLIB_SX126X_CMD_SET_GAIN
+#define RADIOLIB_POWER_SAVE_GAIN                              0x94
+#define RADIOLIB_BOOSTED_GAIN                                 0x96
 
 //RADIOLIB_SX126X_CMD_SET_STANDBY
 #define RADIOLIB_SX126X_STANDBY_RC                             0x00        //  7     0     standby mode: 13 MHz RC oscillator

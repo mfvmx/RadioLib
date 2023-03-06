@@ -74,7 +74,7 @@ int16_t SX126x::begin(uint8_t cr, uint8_t syncWord, uint16_t preambleLength, flo
   RADIOLIB_ASSERT(state);
 
   // set publicly accessible settings that are not a part of begin method
-  state = setCurrentLimit(60.0);
+  state = setCurrentLimit(140.0);
   RADIOLIB_ASSERT(state);
 
   state = setDio2AsRfSwitch(true);
@@ -147,7 +147,7 @@ int16_t SX126x::beginFSK(float br, float freqDev, float rxBw, uint16_t preambleL
   state = setRxBandwidth(rxBw);
   RADIOLIB_ASSERT(state);
 
-  state = setCurrentLimit(60.0);
+  state = setCurrentLimit(140.0);
   RADIOLIB_ASSERT(state);
 
   state = setPreambleLength(preambleLength);
